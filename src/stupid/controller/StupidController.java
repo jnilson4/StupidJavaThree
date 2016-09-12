@@ -26,6 +26,11 @@ public class StupidController
 		String userInput = readKeyboardInput.nextLine();
 		System.out.println("Nice to meet you " + userInput + "!");
 		
+		if (!userInput.equalsIgnoreCase("Jake"))
+		{
+			System.out.println("You don't have the same name as me!");
+		}
+		
 		System.out.println("How old are you " + userInput + "?");
 		double intInput = readKeyboardInput.nextDouble();
 		System.out.println("Wow, you are " + intInput+ "?!");
