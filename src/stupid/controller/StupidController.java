@@ -27,7 +27,7 @@ public class StupidController
 		System.out.println("Nice to meet you " + userInput + "!");
 		
 		System.out.println("How old are you " + userInput + "?");
-		Double intInput = readKeyboardInput.nextDouble();
+		double intInput = readKeyboardInput.nextDouble();
 		System.out.println("Wow, you are " + intInput+ "?!");
 		
 		System.out.println("That's cool! How many pets do you have?");
@@ -49,6 +49,19 @@ public class StupidController
 		
 		System.out.println("How many people are in your family?");
 		Float famInput = readKeyboardInput.nextFloat();
-		System.out.println("Your family of " + famInput + "is really cool!");
+		System.out.println("Your family of " + famInput + " is really cool!");
+		
+		System.out.println("What kind of car do you have?");
+		String carInput = readKeyboardInput.next();
+		System.out.println("Wow, " + userInput + "! " + carInput + " is a really cool car!");
+		readKeyboardInput.nextLine();
+		
+		System.out.println("Are you having fun?");
+		String ynInput = readKeyboardInput.nextLine();
+		System.out.println(ynInput + ", this is fun!");
+		
+		System.out.println("Wait, what was your name again?");
+		String nameInput = readKeyboardInput.nextLine();
+		System.out.println("Oh yeah, " + nameInput + ". That's right!");
 	}
 }
