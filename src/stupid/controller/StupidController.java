@@ -37,11 +37,18 @@ public class StupidController
 		System.out.println("What school do you go to?");
 		String schoolInput = readKeyboardInput.next();
 		System.out.println("I bet " + schoolInput + " is a cool school!");
-		readKeyboardInput.nextLine();
-		//Doesn't have a space to let you type in your school name!
+		readKeyboardInput.nextLine(); //Used to consume the remainder of the text buffer.
 		
 		System.out.println("What is your favorite color?");
 		String colorInput = readKeyboardInput.nextLine();
 		System.out.println(colorInput + " is my favorite too!");
+		
+		System.out.println("What state do you live in?");
+		String stateInput = readKeyboardInput.nextLine();
+		System.out.println(stateInput + " is a beautiful state!");
+		
+		System.out.println("How many people are in your family?");
+		Float famInput = readKeyboardInput.nextFloat();
+		System.out.println("Your family of " + famInput + "is really cool!");
 	}
 }
