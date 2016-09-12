@@ -35,8 +35,9 @@ public class StupidController
 		System.out.println("I wish I had " + dogInput + " pets!");
 		
 		System.out.println("What school do you go to?");
-		String schoolInput = readKeyboardInput.nextLine();
+		String schoolInput = readKeyboardInput.next();
 		System.out.println("I bet " + schoolInput + " is a cool school!");
+		readKeyboardInput.nextLine();
 		//Doesn't have a space to let you type in your school name!
 		
 		System.out.println("What is your favorite color?");
