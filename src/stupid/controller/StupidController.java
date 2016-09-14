@@ -26,7 +26,7 @@ public class StupidController
 		String userInput = readKeyboardInput.nextLine();
 		System.out.println("Nice to meet you " + userInput + "!");
 		
-		if (userInput.equalsIgnoreCase("Jake"))
+		if (userInput.equalsIgnoreCase("Alyssa"))
 		{
 			System.out.println("You have the same name as me!");
 		}
