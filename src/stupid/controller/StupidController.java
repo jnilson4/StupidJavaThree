@@ -17,7 +17,12 @@ public class StupidController
 	{
 		System.out.println("This is slightly less stupid :D");
 		System.out.println(myName);
-		
+		loopMonster();
+		askQuestions();
+	}
+	
+	private void loopMonster()
+	{
 		//for loop #1
 		for (int myNum = 0; myNum<=10; myNum++)
 		{		
@@ -27,16 +32,16 @@ public class StupidController
 		//for loop #2
 		for (int num = 0; num<12; num+=2)
 		{
-			System.out.println("My new number is: " + num);
+			System.out.println("My name is: " +  num);
 		}
 		
 		//while loop #1
-		while ()
+		int hey = 10;
+		while (hey>1)
 		{
-			
+			System.out.print("My monsters name is" + myName);
+			hey++;
 		}
-		
-		askQuestions();
 	}
 	
 	private void askQuestions()
