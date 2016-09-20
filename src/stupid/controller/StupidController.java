@@ -17,6 +17,25 @@ public class StupidController
 	{
 		System.out.println("This is slightly less stupid :D");
 		System.out.println(myName);
+		
+		//for loop #1
+		for (int myNum = 0; myNum<=10; myNum++)
+		{		
+			System.out.println("My number is: " + myNum);
+		}
+		
+		//for loop #2
+		for (int num = 0; num<12; num+=2)
+		{
+			System.out.println("My new number is: " + num);
+		}
+		
+		//while loop #1
+		while ()
+		{
+			
+		}
+		
 		askQuestions();
 	}
 	
