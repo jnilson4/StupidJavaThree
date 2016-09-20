@@ -39,9 +39,12 @@ public class StupidController
 		int hey = 10;
 		while (hey>1)
 		{
-			System.out.print("My monsters name is" + myName);
+			System.out.println("My monsters name is " + myName);
 			hey++;
+			break;
 		}
+		
+		//while loop #2
 	}
 	
 	private void askQuestions()
