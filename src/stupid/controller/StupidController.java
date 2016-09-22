@@ -6,11 +6,13 @@ public class StupidController
 {
 	private String myName;
 	private Scanner readKeyboardInput;
+	private String myLove;
 	
 	public StupidController()
 	{
 		myName = "Jake Nilson";
 		readKeyboardInput = new Scanner(System.in);
+		myLove = "Lyss";
 	}
 	
 	public void start()
@@ -45,6 +47,24 @@ public class StupidController
 		}
 		
 		//while loop #2
+		int go = 10;
+		while (go>1)
+		{
+			System.out.println("I love " + myLove);
+			go++;
+			break;
+		}
+		
+		//nested loop
+				for (int numb = 0; numb<12; numb++)
+				{
+					if (numb<=6)
+					{
+						System.out.println("My number is: " + numb + ", and it's 6 or less!");
+					} else {
+						System.out.println("My number is: " + numb + ", and its more than 6!");
+					}
+				}
 	}
 	
 	private void askQuestions()
