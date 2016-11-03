@@ -17,10 +17,63 @@ public class StupidController
 	
 	public void start()
 	{
-		System.out.println("This is slightly less stupid :D");
-		System.out.println(myName);
-		loopMonster();
-		askQuestions();
+		substringTest();
+		//indexOfTest();
+		//loopTester();
+		//System.out.println("This is slightly less stupid :D");
+		//System.out.println(myName);
+		//askQuestions();
+	}
+	
+	private void substringTest()
+	{
+		String test = "The quick brown fox ...";
+		String words = "... jumped over the lazy dog";
+		
+		
+		String other = test.substring(4);
+		System.out.println("Here is the substring: " + other);
+		
+		other = words.substring(2,2);
+		System.out.println("Here is the partial substring: " + other);
+	}
+	
+	private void indexOfTest()
+	{
+		String words = " ";
+		String sample = "a";
+		int index = -99;
+		
+		index = "sdfsdfsdf".indexOf(sample, 3);
+		
+		System.out.println("The index of the sample in words is: " + index);
+		
+		index = sample.indexOf("");
+		
+		System.out.println("The index of words in sample is: " + index );
+	}
+	
+	private void loopTester()
+	{
+		for(int i=0; i<=4; i++)
+		{
+			System.out.println("James Gosling");
+		}
+		
+		for(int i=0; i<=2; i++)
+		{
+			System.out.printf(".o%do.", i);
+		}
+		
+		for(int i=2; i<=22; i+=4)
+		{
+			System.out.printf("%d", i);
+		}
+		
+		for(int i=5; i>=-4; i-=3)
+		{
+			System.out.printf("%d", i);
+		}
 	}
 	
 	private void loopMonster()
